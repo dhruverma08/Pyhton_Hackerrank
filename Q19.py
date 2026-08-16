@@ -22,3 +22,8 @@ Explanation 0
 Given list is . The maximum score is , second maximum is . Hence, we print  as the runner-up score."""
 
 
+n = int(input())
+A = list(map(int, input().split( )))
+scores = list(set(A))
+scores.sort(reverse = True)
+print(scores[1])
